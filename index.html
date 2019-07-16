@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Reenie+Beanie&display=swap" rel="stylesheet">
+    <title>Notes</title>
+</head>
+<body onload="OnPageLoad();">
+<div class="header">
+ <h1 class='header__title'>Sticky Notes</h1>
+</div>
+<div class='container'>
+    <div id='emptyData'>
+        <p class="emptyData_para"> As of now Sticky Notes are Empty.<br> "Create New Note"</p>
+    </div>
+    <ul id='stickyNote' class="stickyNotes">
+    </ul>
+    <!-- <div class="stickyNote__controller">
+        <form action="" autocomplete="off">
+        <label for="title">Title</label>
+        <input id='title' type="text" required>
+        <label for="note">Notes</label>
+        <textarea  id='note' rows="22" cols="65" required></textarea>
+        <div class="stickyNote__controller-btn">
+                <button id="btn_reset" type="reset">clear</button>
+                 <button id="btn_create"  type="button" onclick="saveNote()">Add</button> 
+                 <button id="btn_update" type="button">Update</button>
+           </div>
+    </form>
+</div> -->
+<div class='add_note_container'>
+    <button class='add_note_btn' onclick="AddNote()">+</button>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

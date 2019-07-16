@@ -1,0 +1,167 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+
+.header{
+    height: 11vh;
+    line-height: 11vh;
+    text-align: center;background: #000046;  /* fallback for old browsers */
+    background:linear-gradient(210deg, #1CB5E0, #010101);
+    box-shadow: 0px 6px 12px -6px #010101;
+
+}
+.header__title{
+    font-size: 4rem;
+    color: white;
+    font-weight: 400;
+}
+.stickyNotes{
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 88vh;
+    overflow-y: auto;
+    justify-content: flex-start;
+}
+li{
+    width: 260px;
+    height: 280px;
+    margin: 20px;
+    padding: 10px;
+    list-style: none;
+border-radius: 5px;
+color: white;
+position: relative;
+
+}
+ li:after
+{
+    z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  right: 10px;
+  left: auto;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+  -webkit-transform: rotate(8deg);
+  -moz-transform: rotate(8deg);
+  -o-transform: rotate(8deg);
+  -ms-transform: rotate(8deg);
+  transform: rotate(8deg);
+}
+
+.stickyNote__controller-btn{
+    margin: 25px 0 0 0;
+}
+button{
+        background-color: #f4511e;
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        font-size: 16px;
+        margin: 4px 2px;
+        opacity: 0.6;
+        transition: 0.3s;
+        display: inline-block;
+        text-decoration: none;
+        cursor: pointer;
+     
+}
+button:hover {opacity: 1}
+.note_btn{
+background: none;
+transition: .1s;
+opacity: 1;
+border: 1px solid white;
+margin: 0;
+position: absolute;
+right: 10px;
+top: 10px;
+padding: 5px 9px;
+border-radius: 50px;
+outline: none;
+}
+.note_btn:hover{
+    transform: scale(1.1) 
+}
+.note_btn_edit{
+    right: 50px;
+}
+#emptyData{
+    font-size: 5rem;
+    position: relative;
+    top:34vh;
+    text-align: center;
+}
+.emptyData_para{
+color:#b5b9ba;
+}
+.note__title{
+font-family: 'Architects Daughter', cursive;
+font-size: 3rem;
+font-weight: 400;
+margin-bottom: 14px;
+word-wrap: break-word;
+}
+.note__para{
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 3rem;
+font-weight: 400;
+word-wrap: break-word;
+max-height: 210px;
+overflow-y: auto;
+}
+
+.add_note_container{
+    position: fixed;
+    top:80vh;
+    right: 6vw;
+}
+.add_note_btn{
+    height: 8vh;
+    width: 8vw;
+    font-size: 4rem;
+    font-weight: 600;
+    border-radius: 50px;
+    opacity: .9;
+color: white;
+background: #000046;  /* fallback for old browsers */
+background: linear-gradient(to left, #1CB5E0, #1d5f72);
+outline: none;box-shadow:  0px 6px 12px -6px #010101;
+}
+.add_note_btn:active{
+    transform: scale(.9);
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 2px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: white; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+  }
